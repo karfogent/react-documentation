@@ -1,0 +1,93 @@
+:root {
+    --mainblack: rgb(32, 35, 42);
+    --mainblue: rgb(97, 218, 251);
+    --mainwhite: rgb(247, 247, 247);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: var(--mainblack);
+    width: 100%;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    svg {
+        width: 45%;
+        height: 45%;
+        position: relative;
+        top: -4vh;
+        animation: tramsformrotate 8s infinite linear;
+    }
+
+    @keyframes tramsformrotate {
+        from {
+            transform: rotate(0);
+        }
+
+        to {
+            transform: rotate(-1turn);
+        }
+    }
+
+    .header-text {
+        font-size: 4rem;
+        color: #61DAFB;
+    }
+
+    .react-text {
+        font-size: 5.5rem;
+        text-align: center;
+        font-weight: bolder;
+    }
+}
+
+nav {
+    svg {
+        fill: #00D8FF;
+        animation: 0;
+        position: absolute;
+        top: 0;
+        right: 3vh;
+        width: 10%;
+        height: 10%;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-device-width:1200px) {
+    header {
+        svg {
+            width: 30%;
+            height: 30%;
+        }
+    }
+
+    nav {
+        svg {
+            display: none;
+        }
+    }
+}
+
+// @media only screen and (max-device-width : 768px) and (orientation : portrait) {
+//     .alert {
+//         display: block
+//     }

@@ -1,0 +1,106 @@
+:root {
+  --mainblack: rgb(32, 35, 42);
+  --mainblue: rgb(97, 218, 251);
+  --mainwhite: rgb(247, 247, 247);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: var(--mainblack);
+  width: 100%;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header svg {
+  width: 45%;
+  height: 45%;
+  position: relative;
+  top: -4vh;
+  -webkit-animation: tramsformrotate 8s infinite linear;
+          animation: tramsformrotate 8s infinite linear;
+}
+
+@-webkit-keyframes tramsformrotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
+  }
+}
+
+@keyframes tramsformrotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
+  }
+}
+
+header .header-text {
+  font-size: 4rem;
+  color: #61DAFB;
+}
+
+header .react-text {
+  font-size: 5.5rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+nav svg {
+  fill: #00D8FF;
+  -webkit-animation: 0;
+          animation: 0;
+  position: absolute;
+  top: 0;
+  right: 3vh;
+  width: 10%;
+  height: 10%;
+}
+
+nav:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-device-width: 1200px) {
+  header svg {
+    width: 30%;
+    height: 30%;
+  }
+  nav svg {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */
