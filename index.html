@@ -8,13 +8,13 @@
     <!-- Подключение  -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="images/react-logo.svg">
-    <script src="/js/app.js" defer></script>
+    <script src="js/app.js" defer></script>
     <title>Главная</title>
 </head>
-<!-- width="372" height="418" -->
+
 
 <body>
-    <header>
+    <header id="header">
         <meta content="width=1180" name="viewport" id="viewport" class="logo-animation">
         <svg viewBox="0 0 372 418" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -25,20 +25,27 @@
             <h1 class="header-text react-text">React:</h1>
             <p class="header-text">Руководство для чайников</р>
         </div>
+
         <nav>
-            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M40.5 40.5H54V54H40.5V40.5ZM20.25 40.5H33.75V54H20.25V40.5ZM0 40.5H13.5V54H0V40.5ZM40.5 20.25H54V33.75H40.5V20.25ZM20.25 20.25H33.75V33.75H20.25V20.25ZM0 20.25H13.5V33.75H0V20.25ZM40.5 0H54V13.5H40.5V0ZM20.25 0H33.75V13.5H20.25V0ZM0 0H13.5V13.5H0V0Z">
-            </svg>
-
-
-            <!--            <ul>
-                <li><a href="#">Почему React?</a></li>
-                <li><a href="#">Документация</a></li>
+            <ul class="menu">
+                <li><a href="#header">Главная</a></li>
+                <li><a href="#documentation">Документация</a></li>    
+                <li><a href="#">Полезные ссылки</a></li>
                 <li><a href="#">Поддержать проект</a></li>
-            </ul> -->
+            </ul>
         </nav>
     </header>
+
+    <section id="documentation">
+        <div class="block-1">
+            <ul class="list-items">
+                <div class="list-title"></div>
+                <li class="list-item"><a href="#">0.1 NodeJS </a></li>
+                <li class="list-item"><a href="#">0.2 Введение</a></li>
+            </ul>
+        </div>
+    </section>
+
 </body>
 
 </html>
