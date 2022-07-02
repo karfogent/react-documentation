@@ -1,7 +1,9 @@
+@charset "UTF-8";
 :root {
   --mainblack: rgb(32, 35, 42);
   --mainblue: rgb(97, 218, 251);
   --mainwhite: rgb(247, 247, 247);
+  --fontMonospace-Corier: 'Courier New', Courier, monospace;
 }
 
 html {
@@ -118,8 +120,8 @@ nav ul li a:hover {
 }
 
 .NoOpacity {
-  -webkit-animation: TransormingTo 0.4s linear forwards;
-          animation: TransormingTo 0.4s linear forwards;
+  -webkit-animation: TransormingTo 0.5s linear forwards;
+          animation: TransormingTo 0.5s linear forwards;
 }
 
 @-webkit-keyframes TransormingTo {
@@ -145,8 +147,8 @@ nav ul li a:hover {
 }
 
 .YeOpacity {
-  -webkit-animation: TransormingFor 0.4s linear forwards;
-          animation: TransormingFor 0.4s linear forwards;
+  -webkit-animation: TransormingFor 0.5s linear forwards;
+          animation: TransormingFor 0.5s linear forwards;
 }
 
 @-webkit-keyframes TransormingFor {
@@ -171,10 +173,6 @@ nav ul li a:hover {
   }
 }
 
-.documentation {
-  margin: 800px 0;
-}
-
 .block-1 ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,18 +180,70 @@ nav ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 80%;
+  margin: 0 auto;
+  color: var(--mainwhite);
 }
 
-.list-item {
-  list-style: none;
+.block-1 ul .list-item {
+  list-style-type: none;
   margin: 0 200px;
+  font-weight: bolder;
+  margin-bottom: 2rem;
 }
 
-.list-item a {
+.block-1 ul .list-item a {
   text-decoration: none;
   color: white;
 }
 
+.block-1 ul .list-item a:hover {
+  color: #61dafb;
+  cursor: pointer;
+}
+
+.block-1 ul .list-item a:visited {
+  color: #a7a7a7;
+}
+
+.block-1 ul .list-item::before {
+  content: attr(count-item) " ";
+  padding: 2px;
+}
+
+/*                     Для документации!!                    */
+.main {
+  max-width: 70%;
+  margin: 0 auto;
+  color: var(--mainwhite);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+p {
+  text-align: justify;
+  text-align-last: center;
+}
+
+.block-border {
+  border: 5px var(--mainblue) solid;
+  border-radius: 15px;
+}
+
+.block-border li {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+/*                     Медиа запросы и другое!!                    */
 ::-webkit-scrollbar {
   width: 10px;
   background-color: var(--mainblack);

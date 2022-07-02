@@ -1,5 +1,5 @@
 const opacityOfNav = document.querySelector("nav")
-scrollPrev = 0;
+let scrollPrev = 0;
 window.addEventListener("scroll", function () {
     if (scrollY > 10 && scrollY > scrollPrev) {
         opacityOfNav.classList.add("NoOpacity")
