@@ -1,3 +1,4 @@
+"use strict";
 const opacityOfNav = document.querySelector("nav")
 let scrollPrev = 0;
 window.addEventListener("scroll", function () {

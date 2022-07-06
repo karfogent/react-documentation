@@ -42,8 +42,6 @@ header {
 header svg {
   width: 45%;
   height: 45%;
-  position: relative;
-  top: -4vh;
   -webkit-animation: tramsformrotate 8s infinite linear;
           animation: tramsformrotate 8s infinite linear;
 }
@@ -187,28 +185,29 @@ nav ul li a:hover {
   color: var(--mainwhite);
 }
 
-.block-1 ul .list-item {
+.block-1 ul li {
+  font-size: 1.8rem;
   list-style-type: none;
   margin: 0 200px;
   font-weight: bolder;
   margin-bottom: 2rem;
 }
 
-.block-1 ul .list-item a {
+.block-1 ul li a {
   text-decoration: none;
   color: white;
 }
 
-.block-1 ul .list-item a:hover {
+.block-1 ul li a:hover {
   color: #61dafb;
   cursor: pointer;
 }
 
-.block-1 ul .list-item a:visited {
+.block-1 ul li a:visited {
   color: #a7a7a7;
 }
 
-.block-1 ul .list-item::before {
+.block-1 ul li::before {
   content: attr(count-item) " ";
   padding: 2px;
 }
@@ -268,9 +267,25 @@ p {
   }
 }
 
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-device-width: 1200px) and (orientation: portrait) {
   nav {
     opacity: 0;
+  }
+  header svg {
+    position: relative;
+    top: -4.5vh;
+  }
+}
+
+@media screen and (max-device-width: 1200px) and (orientation: landscape) {
+  nav {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-device-width: 1800px) {
+  .block-1 ul {
+    max-width: 70%;
   }
 }
 /*# sourceMappingURL=index.css.map */

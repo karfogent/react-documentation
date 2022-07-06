@@ -30,8 +30,6 @@ header {
     svg {
         width: 45%;
         height: 45%;
-        position: relative;
-        top: -4vh;
         animation: tramsformrotate 8s infinite linear;
     }
 
@@ -127,7 +125,8 @@ nav {
         margin: 0 auto;
         color: var(--mainwhite);
 
-        .list-item {
+        li {
+            font-size: 1.8rem;
             list-style-type: none;
             margin: 0 200px;
             font-weight: bolder;
@@ -213,8 +212,26 @@ p {
     }
 }
 
-@media screen and (max-device-width:1200px) {
+@media screen and (max-device-width:1200px) and (orientation: portrait) {
     nav {
         opacity: 0;
+    }
+    header{
+        svg{
+            position: relative;
+            top: -4.5vh;
+        }
+    }
+}
+@media screen and (max-device-width:1200px) and (orientation: landscape) {
+    nav {
+        opacity: 0;
+    }
+}
+@media screen and (min-device-width:1800px){
+    .block-1{
+        ul{
+            max-width: 70%;
+        }
     }
 }
