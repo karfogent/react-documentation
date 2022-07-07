@@ -174,14 +174,16 @@ p {
 .block-border {
     border: 5px var(--mainblue) solid;
     border-radius: 15px;
+
     li {
         margin: 1rem 0;
     }
 }
-.img-nodejs{
-    display:block; 
+
+.img-nodejs {
+    display: block;
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
     border-radius: 15px;
 }
 
@@ -214,28 +216,39 @@ p {
 }
 
 @media screen and (max-device-width:1200px) and (orientation: portrait) {
-    header nav{
+    header nav {
         opacity: 0;
     }
-    header{
-        svg{
+
+    header {
+        svg {
             position: relative;
             top: -4.5vh;
         }
     }
-    .main{
-        max-width: 95%;
 
+    .main {
+        max-width: 95%;
+    }
+
+    .block-1 {
+        ul {
+            li {
+                font-size: 4.5rem;
+            }
+        }
     }
 }
+
 @media screen and (max-device-width:1200px) and (orientation: landscape) {
     nav {
         opacity: 0;
     }
 }
-@media screen and (min-device-width:1800px){
-    .block-1{
-        ul{
+
+@media screen and (min-device-width:1800px) {
+    .block-1 {
+        ul {
             max-width: 70%;
         }
     }

@@ -280,6 +280,9 @@ p {
   .main {
     max-width: 95%;
   }
+  .block-1 ul li {
+    font-size: 4.5rem;
+  }
 }
 
 @media screen and (max-device-width: 1200px) and (orientation: landscape) {
