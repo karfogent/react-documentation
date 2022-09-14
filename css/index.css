@@ -244,6 +244,20 @@ p {
   border-radius: 15px;
 }
 
+.img-react_installing {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.img-error_folder {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
 /*                     Медиа запросы и другое!!                    */
 ::-webkit-scrollbar {
   width: 10px;
