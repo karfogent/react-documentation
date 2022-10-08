@@ -184,6 +184,7 @@ nav ul li a:hover {
   max-width: 80%;
   margin: 0 auto;
   color: var(--mainwhite);
+  text-align: center;
 }
 
 .block-1 ul li {
@@ -316,3 +317,6 @@ p {
   }
 }
 /*# sourceMappingURL=index.css.map */
+
+/*Менюшка*/
+  
