@@ -258,6 +258,12 @@ p {
   margin: 0 auto;
   border-radius: 15px;
 }
+.img-basic_app {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
 
 /*                     Медиа запросы и другое!!                    */
 ::-webkit-scrollbar {
