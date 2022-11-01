@@ -264,7 +264,18 @@ p {
   margin: 0 auto;
   border-radius: 15px;
 }
-
+.img-componentapp {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.img-compincomp {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
 /*                     Медиа запросы и другое!!                    */
 ::-webkit-scrollbar {
   width: 10px;
