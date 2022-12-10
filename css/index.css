@@ -238,41 +238,16 @@ p {
   margin: 1rem 0;
 }
 
-.img-nodejs {
+.main-settings-of-image {
   display: block;
   width: 100%;
   margin: 0 auto;
   border-radius: 15px;
 }
-
-.img-react_installing {
+.settings-of-height-image {
   display: block;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 15px;
-}
-
-.img-error_folder {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 15px;
-}
-.img-basic_app {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 15px;
-}
-.img-componentapp {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 15px;
-}
-.img-compincomp {
-  display: block;
-  width: 100%;
+  height: 50%;
+  width: 50%;
   margin: 0 auto;
   border-radius: 15px;
 }

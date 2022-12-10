@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/main-icons/react-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/app.js" defer></script>
+    <title>NodeJS</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html#header">Главная</a></li>
+            <li><a href="../index.html#documentation">Документация</a></li>
+        </ul>
+    </nav><br><br>
+    <div class="main">
+
+        <h1>Простейшая маршрутизация, route</h1>
+        <p>Раз вы здесь, наверняка у вас возник вопрос, как сделать, чтобы в зависимости от пути в странице менялся не только URL, но и содержимое странички.
+            Именно в таких случаях на помощь приходит роутинг. <break> Так вышло, что в пакетах NodeJS нет роутинга, поэтомум нужно установить почти самостоятельно.
+            Для этого в терминале, если вы в Visual Studio Code, или в NodeJS консоли прописываем следующее: npm instal react-router-dom -save (-save нужен для отметки о скачивании
+            в package.json) и ждём.
+        </p>
+        <img src="../images/route/installing.jpg" alt="installing" class="settings-of-height-image">
+        <p>После установки у нас появилась запись об этой установке и теперь можно пользоваться благами роутинга.<break> В начале нужно указать, что мы используем роутинг, импортировать 
+            его: import {BrowserRouter, Routes, Route} from "react-router-dom"; . После приступаем к использованию данных тэгов.
+            Для этого внутри return() пишем родительский элемент &lt;BrowserRouter&gt; &lt;/BrowserRouter&gt; соответственно. Внутри него 
+            используем тэги &lt;Routes&gt; и &lt;/Routes&gt;, а уже внутри них, наконец, используем последний импортированный тэг &lt;Route/&gt; (конструкция похожа на матрёшку). 
+            В него нужно уложить путь (path='путь'), а также компоненту (element={&lt;Компонента/&gt;}), которая будет отрисовываться по этому пути.<break> Например, у нас есть 
+            компонента Hello, которую нужно отобразить по пути /hello .
+        </p>
+
+        <img src="../images/route/route.jpg" alt="route" class="main-settings-of-image">
+
+         <p>Таким образом, при нажатии на Hello? у нас изменится путь на /hello , а &lt;Route&gt; отобразит нужную нам компоненту.</p>
+
+         <img src="../images/route/way.jpg" alt="way" class="main-settings-of-image">
+
+        <div class="block-border">
+            <ul>
+                <li>Нужно скачать react-router-dom в терминале или консоле NodeJS</li>
+                <li>В основном используем BrowserRouter, Routes, Route</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
