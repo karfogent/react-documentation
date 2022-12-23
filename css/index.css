@@ -209,6 +209,22 @@ nav ul li a:hover {
   color: #a7a7a7;
 }
 
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+#button-down{
+  color: rgba(97, 218, 251, 1);
+  border-style: dashed;
+  border-color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  animation: blink 1s linear infinite;
+  cursor: pointer;
+}
+
 /*                     Для документации!!                    */
 .main {
   max-width: 70%;

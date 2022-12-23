@@ -10,3 +10,12 @@ window.addEventListener("scroll", function () {
     }
     scrollPrev = this.scrollY
 })
+const buttonDown = document.getElementById("button-down")
+buttonDown.onclick = function() {
+    window.scrollBy(0,300);
+}
+window.addEventListener('scroll', function() {
+    let scroll = window.pageYOffset || document.documentElement.scrollTop ||
+                  document.body.scrollTop || 0;
+    buttonDown.style.opacity = Math.max(0, Math.min(1, -scroll / 150 + 2));
+  });
